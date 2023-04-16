@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvg4livx2knfe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lw43n"]
+
+[node name="DeathVoid" type="Node2D"]
+
+[node name="Hazard" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hazard"]
+position = Vector2(26, -18)
+shape = SubResource("RectangleShape2D_lw43n")
+
+[node name="HazardRespawn" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HazardRespawn"]
+position = Vector2(-33, -19)
+shape = SubResource("RectangleShape2D_lw43n")
